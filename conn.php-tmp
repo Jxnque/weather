@@ -1,0 +1,19 @@
+
+Warning: PHP Startup: Unable to load dynamic library 'D:\phptool\php\php\php-5.6.27-nts\ext\php_pdo_firebird.dll' - 找不到指定的模块。
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'D:\phptool\php\php\php-5.6.27-nts\ext\php_pdo.dll' - 找不到指定的模块。
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'D:\phptool\php\php\php-5.6.27-nts\ext\php_pdo_oci.dll' - 找不到指定的模块。
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'D:\phptool\php\php\php-5.6.27-nts\ext\php_pdo_mssql.dll' - 找不到指定的模块。
+ in Unknown on line 0
+<?php
+header("Content-type:text/html;charset=utf-8");
+
+$conn = mysqli_connect("localhost", "root", "root", "azure") or die("杩炴帴鏁版嵁搴撳け璐ワ紒".mysqli_error());
+mysqli_query($conn, "set names utf8");
+
+?>
